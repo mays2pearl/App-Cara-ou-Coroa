@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NjN-NV-jM6">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Cara ou Coroa-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Cara_ou_Coroa" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cara ou coroa" translatesAutoresizingMaskIntoConstraints="NO" id="icF-4H-9AI">
+                                <rect key="frame" x="20" y="128" width="374" height="250"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pIe-fa-ZcH">
+                                <rect key="frame" x="49" y="386" width="317" height="85"/>
+                                <color key="backgroundColor" red="0.98200553660000001" green="0.9769675136" blue="0.92723721270000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="63"/>
+                                <size key="titleShadowOffset" width="2" height="0.0"/>
+                                <state key="normal" title="JOGAR">
+                                    <color key="titleColor" red="0.48253399130000002" green="0.71761125329999997" blue="0.54414033890000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="42Q-6f-0uX" kind="show" identifier="resultado" id="hcc-RI-ais"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.48253399130000002" green="0.71761125329999997" blue="0.54414033890000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pIe-fa-ZcH" firstAttribute="top" secondItem="icF-4H-9AI" secondAttribute="bottom" constant="8" symbolic="YES" id="DDt-Pz-LdG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="icF-4H-9AI" secondAttribute="trailing" constant="20" id="DRv-TG-T6g"/>
+                            <constraint firstItem="icF-4H-9AI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="T5O-jK-FOt"/>
+                            <constraint firstItem="icF-4H-9AI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="WyD-Pu-8oX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pIe-fa-ZcH" secondAttribute="trailing" constant="48" id="gtR-Um-E1g"/>
+                            <constraint firstItem="pIe-fa-ZcH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="49" id="qyd-Gq-5k3"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Cara ou Coroa" id="tyg-mb-gCh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1015.9420289855074" y="83.705357142857139"/>
+        </scene>
+        <!--Resultado View Controller-->
+        <scene sceneID="mpc-Md-0sX">
+            <objects>
+                <viewController id="42Q-6f-0uX" customClass="ResultadoViewController" customModule="Cara_ou_Coroa" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vcj-WC-WRq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="moeda" translatesAutoresizingMaskIntoConstraints="NO" id="iZY-k2-u76">
+                                <rect key="frame" x="93.5" y="347.5" width="227" height="201"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="201" id="5S9-hG-SII"/>
+                                    <constraint firstAttribute="width" constant="227" id="YnA-ix-INQ"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PMp-yT-J3l"/>
+                        <color key="backgroundColor" red="0.48253399130000002" green="0.71761125329999997" blue="0.54414033890000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iZY-k2-u76" firstAttribute="centerY" secondItem="Vcj-WC-WRq" secondAttribute="centerY" id="nRM-XJ-tQr"/>
+                            <constraint firstItem="iZY-k2-u76" firstAttribute="centerX" secondItem="Vcj-WC-WRq" secondAttribute="centerX" id="oGc-8S-8rC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="IFL-4V-GI9"/>
+                    <connections>
+                        <outlet property="resultadoImage" destination="iZY-k2-u76" id="72n-re-vHj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OnF-67-snh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1763.7681159420292" y="95.758928571428569"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Ejf-OT-C3F">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NjN-NV-jM6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vG2-X0-xem">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Kyg-fi-Xuq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hMw-VN-xpj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="105.79710144927537" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cara ou coroa" width="512" height="250"/>
+        <image name="moeda" width="264" height="265"/>
+    </resources>
+</document>
